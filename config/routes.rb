@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # config a controller for posts. res posts with root as a posts and index-action
+  resources :posts
+  root "posts#index"
 end
